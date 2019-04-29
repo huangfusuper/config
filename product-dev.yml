@@ -22,3 +22,5 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 10 #给服务端发送心跳 证明自己还活着间隔10s
     lease-expiration-duration-in-seconds: 30 #服务器接收最后一次心跳多少秒后将服务剔除
+env:
+  dev
