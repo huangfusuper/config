@@ -1,3 +1,4 @@
+evn: dev
 spring:
   application:
     name: PRODUCT-SERVER #服务名称
