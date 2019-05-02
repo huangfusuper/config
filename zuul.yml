@@ -11,13 +11,6 @@ eureka:
     lease-renewal-interval-in-seconds: 10 #给注册中心发送心跳间隔时间
     lease-expiration-duration-in-seconds: 30 #服务器接收最后一次心跳后间隔多少秒被剔除
 zuul:
-  routes:
-    user-client: /myuser/** #简洁写法，与下方相同
-    #myuser: #自定义路由规则
-      #path: /myuser/** #访问路径
-      #serviceId: user-client #要改变的服务名称
-  #ignored-patterns:
-    #- /**/userHystrix/findProduct #排除某些路由，无法通过路由访问
   host:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
