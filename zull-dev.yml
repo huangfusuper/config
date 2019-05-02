@@ -1,0 +1,12 @@
+evn: dev
+spring:
+  application:
+    name: ZUUL-SERVER #服务名称
+server:
+  port: 4000 #服务端口
+eureka:
+  instance:
+    instance-id: ZUUL-SERVER-0 #服务id  集群搭建
+    prefer-ip-address: true #显示ip地址
+    lease-renewal-interval-in-seconds: 10 #给注册中心发送心跳间隔时间
+    lease-expiration-duration-in-seconds: 30 #服务器接收最后一次心跳后间隔多少秒被剔除
