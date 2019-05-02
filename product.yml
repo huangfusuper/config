@@ -14,3 +14,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://${.instance.hostname}:${eureka.instance.eurekaPort}/eureka #把本服务注册到Eureka的注册中心eureka
+ evn: dev
